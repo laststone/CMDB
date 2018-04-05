@@ -139,7 +139,7 @@ def handle_facter_message(data):
 
 
 # 定义取facter得函数
-def gggggget_all_host_facter_message():
+def gggget_all_host_facter_message():
     # 由于puppet的yaml文件是ruby格式的，需要进行转换
     yaml.add_multi_constructor(u"!ruby/object:", construct_ruby_object)
     yaml.add_constructor(u"!ruby/sym", construct_ruby_sym)
@@ -167,6 +167,7 @@ def gggggget_all_host_facter_message():
                     all_host_facter_message[file_name] = result_dict
     # return我们最终的数据结果集
     return all_host_facter_message
+
 
 def get_all_host_facter_message():
     all_host_facter_message={'centos7-docker-ui':{'name':'centos7-docker-ui',

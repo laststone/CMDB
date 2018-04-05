@@ -19,7 +19,7 @@ urlpatterns = patterns('',
                        url(r'cmdb/(?P<model>\w+)/import/$', 'cmdb.views.import_data'),
 
                        # 操作历史
-                      # url(r'^cmdb/changelog/', include('echelon.urls')),
+                       url(r'^cmdb/changelog/', include('echelon.urls')),
 )
 
 # Wire up our API using automatic URL routing.

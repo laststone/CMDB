@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cmdb',
-#    'echelon',
+    'echelon',
     'rest_framework'
 )
 
@@ -61,7 +61,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-#    'echelon.middleware.EchelonMiddleware',
+    'echelon.middleware.EchelonMiddleware',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
